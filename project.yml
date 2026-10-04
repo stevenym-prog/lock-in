@@ -1,0 +1,40 @@
+name: LockIn
+options:
+  bundleIdPrefix: com.stevenym
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+targets:
+  LockIn:
+    type: application
+    platform: iOS
+    sources:
+      - path: LockIn
+    info:
+      path: LockIn/Info.plist
+      properties:
+        CFBundleDisplayName: LOCK IN
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        CFBundleURLTypes:
+          - CFBundleURLName: com.stevenym.lockin
+            CFBundleURLSchemes:
+              - lockin
+        LSApplicationQueriesSchemes:
+          - instagram
+          - snssdk1233
+          - youtube
+          - twitter
+          - snapchat
+          - reddit
+          - fb
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.stevenym.lockin
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: NO
